@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Contact: Brandon.Murch@protonmail.com -->
+  <meta name="author" content="Brandon Murch">
+  <meta name="description" content="A front-end site for a link shortener service with instructions and a search bar">
+  <title>Link Shortener</title>
+  <meta name="description" content="Returns a JSON file with both the unixtime and natural time.">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body class="background">
+  <header>
+    <h1 class="header__text">
+      Link Shortener
+    </h1>
+  </header>
+
+  <main class="">
+    <div class="row layout__row--90 row--setHeight">
+      <div class="layout__col--12 layout__col--tablet12">
+        <p class="article__text--link">
+      <form class="searchBar--form layout__col--12 layout__col--tablet12">
+        <input class="searchBar" type="text" maxlength="100" placeholder="www.google.com">
+        <button class="btn btn--submit" type="button" value="submit">&#10003;</button>
+      </form>
+      <div class="searchBar__results">
+      </div>
+    </div>
+    <h2 class="article__text--heading">Instructions</h2>
+    <p class="article__text"> Enter a website to receive a shortened link.
+      <br> Once you have the shortened link, you can re-enter the link to be redirected to the site.
+      <br> Alternatively you can use the site as an API, by inserting the website,
+      or shortened link after the https://link-shortener.glitch.me/  </p>
+  </main>
+  <script type="text/javascript" src="./scripts/searchBar.js"></script>
+</body>
+
+</html>
