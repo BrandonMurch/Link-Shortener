@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const PORT = process.env.PORT || 5000;
 const app = express();
-const mongoDB = require("/Users/BrandonMurch/Documents/Programming/Github/Link-Shortener/build/scripts/mongoDB.js");
+const mongoDB = require("mongoDB.js");
 app.use(express.static(path.join(__dirname + '/../')));
 app.get('/', (req, res) => {
     res.setHeader('Content-Type', 'text/HTML');
